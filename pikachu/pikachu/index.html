@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  lang="vi"
+  xml:lang="vi"
+>
+  <head>
+<title>Pikachu</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Chơi ngay Pikachu 2003 – game nối thú gỡ hình huyền thoại với hình Pokemon dễ thương! Phiên bản cổ điển, dễ chơi, miễn phí 100% ngay trên trình duyệt."
+    />
+    <meta
+      name="keywords"
+      content="Game Pikachu, Pikachu cổ điển, Pikachu 2003, Nối Thú, Pikachu PC, Pikachu trái cây, game nối hình, pikachu, pikachu 2003, pikachu cổ điển 2003, kawaii, kawaii cổ điển, nối thú, nối thú 2003, nối thú cổ điển, #pikachu, #pikachu2003, #pikachucodien2003, #kawaii, #kawaiicodien, #noithu, #noithu2003, #noithucodien"
+    />
+    <meta
+      property="og:title"
+      content="Pikachu"
+    />
+    <meta property="og:url" content="./" />
+    <meta
+      property="og:description"
+      content="Chơi ngay Pikachu 2003 – game nối thú gỡ hình huyền thoại! Cổ điển, dễ chơi, miễn phí trên trình duyệt."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="./" />
+    <link rel="icon" href="favico.ico" />
+    <meta name="theme-color" content="#111111" />
+    <base href="" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Game Pikachu Cổ Điển 2003" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="./css/bgpikachu.jpg"
+    />
+    <meta property="og:image:alt" content="Pikachu 2003 Nối Thú Gỡ Hình" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pikachu"
+    />
+    <meta
+      name="twitter:description"
+      content="Chơi ngay Pikachu 2003 – game nối thú gỡ hình huyền thoại! Cổ điển, dễ chơi, miễn phí trên trình duyệt."
+    />
+    <meta
+      name="twitter:image"
+      content="./css/bgpikachu.jpg"
+    />
+    <script type="text/javascript" src="js/jhCore-1.54.js"></script>
+    <script type="text/javascript" src="cache/localsave.js"></script>
+    <link type="text/css" rel="Stylesheet" href="css/style.css" />
+
+    <script type="text/javascript">
+      var oStaticURL = "";
+      jh.ready(function () {
+        jh("#maintable").attr("class", "mt" + Math.round(Math.random(4) + 1));
+        var el;
+        loadImage();
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="loading" class="style11" align="center">
+      <button id="highScore" type="button">High score: 0</button>
+
+      <table
+        id="maintable"
+        width="800"
+        align="center"
+        style="visibility: visible; border: 1px dashed rgb(255, 255, 255)"
+        class="mt2"
+      >
+        <tbody>
+          <tr>
+            <td class="status">
+              <div align="center">
+                <span id="level0l">Màn</span>
+                <span id="level"><span id="levelNumber">1</span><small id="repeat"></small></span>
+                <span id="blood01">Lượt Đổi</span>
+                <span id="blood">10</span>
+                <span id="score01">Điểm</span>
+                <span id="score">0</span>
+              </div>
+            </td>
+            <td id="board" class="playing"></td>
+            <td class="timebar" valign="bottom">
+              <div id="timebar" style="height: 375px"></div>              <label id="timeToggle">
+                <input type="checkbox" id="timeMode" checked /> Thời gian
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                type="button"
+                id="change_sound"
+                name="Button"
+                class="soundOn"
+                value="Tắt âm thanh"
+                onclick="el.changesound()"
+              />
+              <input
+                type="button"
+                name="Button"
+                id="change_block"
+                value="Đổi vị trí"
+                onclick="change_block()"
+              />
+              <input
+                type="button"
+                id="gReplay"
+                name="Button"
+                value="Chơi lại"
+                onclick="el.disp_confirm()"
+              />
+              <label id="endlessToggle" style="margin-left: 12px; color: #ffe506; cursor: pointer;">
+                <input type="checkbox" id="endlessMode" /> Endless
+              </label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="js/pikachuold2.js"></script>
+    <audio id="audiosound2" __idm_id__="139265">
+      <source src="sound/sound2.mp3" />
+    </audio>
+    <audio id="audiosound1">
+      <source src="sound/sound1.mp3" />
+    </audio>
+    <audio id="audiosound4">
+      <source src="sound/sound4.mp3" />
+    </audio>
+  </body>
+</html>
